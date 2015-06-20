@@ -51,7 +51,7 @@ class LibraryManager
   def days_to_buy price
 
     penya = price / 100 * 0.1
-    ((price / penya) / 24).to_i
+    ((price / penya) / 24).round
 
 
   end
