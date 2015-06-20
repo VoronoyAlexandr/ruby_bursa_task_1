@@ -30,7 +30,8 @@ describe LibraryManager do
 
     res = LibraryManager.new.days_to_buy(price_in_cent)
 
-    expect(res).to eq 42 # The result is always 41.6 ~ 42.
+    #expect(res).to eq 42 # The result is always 41.6 ~ 42.
+    expect(res).to eq 41 # We need full days, not rounded
   end
 
 
@@ -39,7 +40,7 @@ describe LibraryManager do
 
     res = LibraryManager.new.author_translit(author_name)
 
-    expect(res).to eq 'Hnat Hotkevych'
+    expect(res).to eq 'Hnat Khotkevych' # fix Kh letters
   end
 
 
